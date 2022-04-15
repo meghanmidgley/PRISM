@@ -5,11 +5,9 @@ rm(list = ls(all=TRUE))
 # -----------------------------------------------------------
 # load packages and relevant file paths
 # -----------------------------------------------------------
-library(car)
-library(emmeans)
-library(lmerTest)
 library(tidyverse)
-library(ggplot2)
+library(car)
+library(multcomp)
 
 #Load data
 #file.choose()
