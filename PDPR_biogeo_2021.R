@@ -425,11 +425,4 @@ leveneTest(logNitrification ~ Block, data = PDPR2021.df)
 #model results
 summary(Nit.aov)
 
-try<-lmer(logNitrification~Phylo.div*Trait.div+ (1|Block), PDPR2021poly.df)
-anova(try)
-emmeans(try, list(pairwise ~ Group), adjust = "tukey")
-
-
-boxplot(PDPR2021mono.df$logNO3~Group, PDPR2021mono.df)
-
 
